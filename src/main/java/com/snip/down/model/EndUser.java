@@ -10,10 +10,10 @@ public class EndUser {
     @GeneratedValue
     private long id;
 
-    @Column
+    @Column(unique = true)
     private String email;
 
-    @Column
+    @Column(unique = true)
     private String username;
 
     @Column
