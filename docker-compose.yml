@@ -5,7 +5,7 @@ services:
     image: postgres
     environment:
       - POSTGRES_DB=snip
-      - POSTGRES_USER=password
+      - POSTGRES_USER=mattruddy
       - POSTGRES_PASSWORD=password
     ports:
       - 5432:5432
