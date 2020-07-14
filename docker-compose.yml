@@ -4,14 +4,14 @@ services:
   db:
     image: postgres
     environment:
-      - POSTGRES_DB={db_name}
-      - POSTGRES_USER={username}
-      - POSTGRES_PASSWORD={password}
+      - POSTGRES_DB=snip
+      - POSTGRES_USER=password
+      - POSTGRES_PASSWORD=password
     ports:
       - 5432:5432
     volumes:
       - ./.postgres/data:/var/lib/postgresql/data
-  spring:
+  snip:
     build: .
     expose:
       - 8080
